@@ -7,9 +7,9 @@ Vous êtes attitré à un projet de développement d'un système de récensement
 Le fichier **liste_especes.xlsx** est un fichier qui respecte tous les requis.
 
 ## Requis du domaine
-- Il doit y avoir une feuille nommée **especes**.
+- Il doit y avoir une feuille nommée **especes** dans le fichier d'entrée.
 - La feuille **especes** doit avoir les trois colonnes suivantes en ordre : *Nom*, *Nom latin* et *Habitat*.
-- Les majuscules et minuscules ne doivent pas être pris en compte.
+- Les majuscules et minuscules ne doivent pas être pris en compte pour les noms de colonnes.
 - Si la structure n'est pas valide, un message d'erreur de format devra apparaître à l'utilisateur.
 
 ## Requis applicatifs
