@@ -1,0 +1,82 @@
+﻿using ExcelToExcel.Models;
+using ExcelToExcel.ViewModels;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Reflection;
+using Xunit;
+
+namespace ExcelToExcel.Tests
+{
+    public class EspeceXLTests
+    {
+        MainViewModel vm;
+        string excelFilesPath;
+
+        public EspeceXLTests()
+        {
+            vm = new MainViewModel();
+
+            Uri codeBaseUrl = new Uri(Assembly.GetExecutingAssembly().Location);
+            var codeBasePath = Uri.UnescapeDataString(codeBaseUrl.AbsolutePath);
+            var dirPath = Path.GetDirectoryName(codeBasePath);
+
+            /// Va chercher le dossier Data à partir du dossier de compilation
+            /// Adapter selon votre réalité
+            excelFilesPath = Path.Combine(dirPath, @"..\..\..\..\..\data");
+        }
+
+        [Theory]
+        [MemberData(nameof(BadExcelFilesTestData))]
+        public void GetCSV_WrongFileContent_Should_Fail(string fn)
+        {
+            /// Arrange
+            /// 
+            var filename = Path.Combine(excelFilesPath, fn);
+            var especeXL = new EspeceXL(filename);
+            especeXL.LoadFile();
+
+            /// Act
+            /// 
+            Action act = () => especeXL.GetCSV();
+
+            /// Assert
+            /// 
+            Assert.Throws<ArgumentException>(act);
+        }
+
+        [Theory]
+        [MemberData(nameof(GoodExcelFileTestData))]
+        public void GetCSV_GoodFileContent_Should_Pass(string fn)
+        {
+            /// Arrange
+            /// 
+            var filename = Path.Combine(excelFilesPath, fn);
+            var especeXL = new EspeceXL(filename);
+            especeXL.LoadFile();
+            var notExpected = "";
+
+            /// Act
+            /// 
+            var actual = especeXL.GetCSV();
+
+            /// Assert
+            /// 
+            Assert.NotEqual(notExpected, actual);
+        }
+
+        public static IEnumerable<object[]> BadExcelFilesTestData = new List<object[]>
+        {
+            new object[] {"Contenu_nom de peuplement.xlsx"},
+            new object[] {"faune_aquatique_v21.xlsx"},
+            new object[] {"faune_aquatique_v21_segment.xlsx"},
+            new object[] {"Tableau_Export_v1.xlsx"},
+        };
+
+        public static IEnumerable<object[]> GoodExcelFileTestData = new List<object[]>
+        {
+            new object[] {"liste_especes.xlsx"},
+            new object[] {"liste_especes_multifeuilles.xlsx"},
+        };
+    }
+}

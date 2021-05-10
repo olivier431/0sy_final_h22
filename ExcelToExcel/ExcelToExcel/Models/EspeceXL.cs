@@ -7,9 +7,9 @@ namespace ExcelToExcel.Models
 {
     public class EspeceXL
     {
+        private string sheetname = "especes";
+
         private IXLWorkbook wb;
-        private FileStream fs;
-        
 
         public string Filename { get; set; }
         public bool IsReadOnly { get; private set; } = false;
@@ -28,9 +28,11 @@ namespace ExcelToExcel.Models
 
         public void LoadFileReadOnly()
         {
-            fs = new FileStream(Filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite);
-            wb = new XLWorkbook(fs);
-            IsReadOnly = true;
+            using (var fs = new FileStream(Filename, FileMode.Open, FileAccess.Read, FileShare.ReadWrite))
+            {
+                wb = new XLWorkbook(fs);
+                IsReadOnly = true;
+            }
         }
 
         public object GetCell(int sheet, int row, int column)
@@ -45,6 +47,11 @@ namespace ExcelToExcel.Models
 
         public string GetCSV()
         {
+            if (!validFileContent())
+            {
+                throw new ArgumentException("Mauvais format de fichier!");
+            }
+
             string result = string.Empty;
 
             var worksheet = wb.Worksheet("especes");
@@ -64,6 +71,26 @@ namespace ExcelToExcel.Models
             }
 
             return result;
+        }
+
+        private bool validFileContent()
+        {
+            
+            var valid = wb.Worksheets.Contains(sheetname);
+
+            if (valid)
+            {
+                var ws = wb.Worksheet(sheetname);
+                var nom = ws.Cell(1, 1).Value.ToString().Trim().ToLower();
+                var nomLatin = ws.Cell(1, 2).Value.ToString().Trim().ToLower();
+                var habitat = ws.Cell(1, 3).Value.ToString().Trim().ToLower();
+
+                valid &= nom == "nom";
+                valid &= nomLatin == "nom latin";
+                valid &= habitat == "habitat";
+            }
+
+            return valid;
         }
 
     }

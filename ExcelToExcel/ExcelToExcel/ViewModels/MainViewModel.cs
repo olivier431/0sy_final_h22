@@ -2,6 +2,7 @@
 using ExcelToExcel.Commands;
 using ExcelToExcel.Models;
 using System;
+using System.IO;
 
 namespace ExcelToExcel.ViewModels
 {
@@ -81,14 +82,43 @@ namespace ExcelToExcel.ViewModels
 
         private bool CanExecuteLoadContentCommand(string obj)
         {
-            return !string.IsNullOrEmpty(InputFilename);
+            bool result;
+
+            if (!string.IsNullOrEmpty(obj))
+                InputFilename = obj;
+
+            var fileExists = File.Exists(InputFilename);
+
+            if (!fileExists)
+            {
+                Message = "Fichier inexistant!";
+                result = false;
+            }
+            else
+            {
+                Message = "";
+                result = true;
+            }
+
+            return result;
         }
 
-        private void LoadContent(string obj)
+        private void LoadContent(string obj = null)
         {
-            especes = new EspeceXL(InputFilename);
-            especes.LoadFile();
-            FileContent = especes.GetCSV();
+            try
+            {
+                especes = new EspeceXL(InputFilename);
+                especes.LoadFile();
+                FileContent = especes.GetCSV();
+            } catch (ArgumentException ex)
+            {
+                Message = "Mauvais format de fichier!";
+            } catch (IOException ex)
+            {
+                especes.LoadFileReadOnly();
+                FileContent = especes.GetCSV();
+                Message = "Fichier en lecture seule";
+            }
         }
 
         private void TestAction(string obj)
