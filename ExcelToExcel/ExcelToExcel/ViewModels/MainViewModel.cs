@@ -1,5 +1,6 @@
 ﻿
 using ExcelToExcel.Commands;
+using ExcelToExcel.Models;
 using System;
 
 namespace ExcelToExcel.ViewModels
@@ -8,6 +9,8 @@ namespace ExcelToExcel.ViewModels
     {
         private string inputFilename;
         private string outputFilename;
+        private string message;
+        private EspeceXL especes;
 
         public string InputFilename
         {
@@ -20,6 +23,7 @@ namespace ExcelToExcel.ViewModels
                 /// Sert à envoyer un signal au UI pour valider si
                 /// la commande peut être exécuté
                 ValidateExcelCommand.RaiseCanExecuteChanged();
+                LoadContentCommand.RaiseCanExecuteChanged();
             }
         }
 
@@ -32,7 +36,36 @@ namespace ExcelToExcel.ViewModels
             }
         }
 
+        
+
+        /// <summary>
+        /// Utiliser cette propriété pour passer un message à l'utilisateur
+        /// </summary>
+        public string Message
+        {
+            get { return message; }
+            set {
+                message = value;
+                OnPropertyChanged();
+            }
+        }
+
+
+        private string fileContent;
+
+        public string FileContent
+        {
+            get { return fileContent; }
+            set {
+                fileContent = value;
+                OnPropertyChanged();
+            }
+        }
+
+
         public DelegateCommand<string> ValidateExcelCommand { get; set; }
+        public DelegateCommand<string> LoadContentCommand { get; set; }
+        public DelegateCommand<string> TestCommand { get; set; }
 
         public MainViewModel()
         {
@@ -42,6 +75,25 @@ namespace ExcelToExcel.ViewModels
         private void initCommands()
         {
             ValidateExcelCommand = new DelegateCommand<string>(ValidateExcel, CanExecuteValidateExcelCommand);
+            LoadContentCommand = new DelegateCommand<string>(LoadContent, CanExecuteLoadContentCommand);
+            TestCommand = new DelegateCommand<string>(TestAction);
+        }
+
+        private bool CanExecuteLoadContentCommand(string obj)
+        {
+            return !string.IsNullOrEmpty(InputFilename);
+        }
+
+        private void LoadContent(string obj)
+        {
+            especes = new EspeceXL(InputFilename);
+            especes.LoadFile();
+            FileContent = especes.GetCSV();
+        }
+
+        private void TestAction(string obj)
+        {
+            
         }
 
         /// <summary>

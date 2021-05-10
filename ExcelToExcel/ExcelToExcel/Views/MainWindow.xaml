@@ -4,8 +4,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExcelToExcel"
+        xmlns:viewmodels="clr-namespace:ExcelToExcel.ViewModels" 
+        d:DataContext="{d:DesignInstance Type=viewmodels:MainViewModel}"
         mc:Ignorable="d"
-        Title="MainWindow" Height="150" Width="600">
+        Title="MainWindow" MinHeight="200" Width="600" MaxHeight="800">
     <Window.Resources>
         <Style TargetType="Button">
             <Setter Property="Margin" Value="2"/>
@@ -21,9 +23,12 @@
         <Menu DockPanel.Dock="Top">
             <MenuItem Header="Fichier"/>
         </Menu>
-        <StatusBar DockPanel.Dock="Bottom"/>
+        <StatusBar DockPanel.Dock="Bottom">
+            <TextBlock Text="{Binding Message, UpdateSourceTrigger=PropertyChanged}" Foreground="Red" />
+        </StatusBar>
         <Grid>
             <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
                 <RowDefinition Height="auto"/>
             </Grid.RowDefinitions>
@@ -41,7 +46,15 @@
             </Grid>
             <StackPanel Grid.Row="1">
                 <Button Width="150" Content="Valider" Command="{Binding ValidateExcelCommand}"/>
+                <Button Width="150" Content="Charger" Command="{Binding LoadContentCommand}"/>
             </StackPanel>
+            <StackPanel Grid.Row="2">
+                <TextBox Text="{Binding FileContent}" 
+                             AcceptsReturn="True" ScrollViewer.VerticalScrollBarVisibility="Auto"
+                             MaxHeight="250"
+                             />
+            </StackPanel>
+            
         </Grid>
     </DockPanel>
 </Window>
