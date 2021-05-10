@@ -3,9 +3,26 @@ using System.Windows.Input;
 
 namespace ExcelToExcel.Commands
 {
+    /// <summary>
+    /// Classe qui encapsule l'interface ICommand pour en faciliter son
+    /// utilisation
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class DelegateCommand<T> : ICommand
     {
+        /// <summary>
+        /// Commentaire pédagogique
+        /// Un prédicat est une fonction qui retourne un booléen
+        /// qui sert de prémisse à l'exécution d'une commande
+        /// Si le prédicat est faux, on ne pourra exécuter la commande
+        /// </summary>
         private readonly Predicate<T> _canExecute;
+
+        /// <summary>
+        /// Commentaire pédagogique
+        /// L'action est la méthode qui prend un argument de type T
+        /// en paramètre
+        /// </summary>
         private readonly Action<T> _execute;
 
         public DelegateCommand(Action<T> execute)

@@ -4,9 +4,13 @@ Voici quelques exercices qui vont vous aider pour l'éventuel évaluation sur ce
 ## Scénario
 Vous êtes attitré à un projet de développement d'un système de récensement des espèces écologiques. Le système doit extraire les données d'un fichier Excel source vers un autre fichier Excel. Le projet C# est déjà débuté et il utilise le package Nuget ClosedXML pour gérer les fichiers Excel.
 
+Le fichier **liste_especes.xlsx** est un fichier qui respecte tous les requis.
+
 ## Requis du domaine
-- Les contenus des cellules A1, B1, C1 et D1 de la première feuille seront respectivement _record_id, _title, _server_updated_at et _updated_by
-- Le fichier Excel devra avoir au moins 5 feuilles. Sinon un message à l'utilisateur indiquera que le fichier source n'est pas valide.
+- Il doit y avoir une feuille nommée **especes**.
+- La feuille **especes** doit avoir les trois colonnes suivantes en ordre : *Nom*, *Nom latin* et *Habitat*.
+- Les majuscules et minuscules ne doivent pas être pris en compte.
+- Si la structure n'est pas valide, un message d'erreur de format devra apparaître à l'utilisateur.
 
 ## Requis applicatifs
 L'application doit être en mesure de charger un fichier Excel.

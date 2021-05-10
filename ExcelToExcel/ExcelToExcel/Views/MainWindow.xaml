@@ -5,8 +5,43 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ExcelToExcel"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="150" Width="600">
+    <Window.Resources>
+        <Style TargetType="Button">
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+        <Style TargetType="TextBlock">
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+        <Style TargetType="TextBox">
+            <Setter Property="Margin" Value="2"/>
+        </Style>
+    </Window.Resources>
+    <DockPanel>
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="Fichier"/>
+        </Menu>
+        <StatusBar DockPanel.Dock="Bottom"/>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="auto"/>
+                <RowDefinition Height="auto"/>
+            </Grid.RowDefinitions>
+            <Grid>
+                <!-- Contrôles pour le chargement de fichier -->
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*"/>
+                    <ColumnDefinition Width="2*"/>
+                    <ColumnDefinition Width="auto"/>
+                </Grid.ColumnDefinitions>
 
-    </Grid>
+                <TextBlock  Grid.Column="0" Text="Fichier d'entrée :"/>
+                <TextBox    Grid.Column="1" Text="{Binding InputFilename, UpdateSourceTrigger=PropertyChanged}"/>
+                <Button     Grid.Column="2" Width="20" HorizontalAlignment="Left" Name="BtnInputFile" Content="..." Click="BtnInputFile_Click"/>
+            </Grid>
+            <StackPanel Grid.Row="1">
+                <Button Width="150" Content="Valider" Command="{Binding ValidateExcelCommand}"/>
+            </StackPanel>
+        </Grid>
+    </DockPanel>
 </Window>

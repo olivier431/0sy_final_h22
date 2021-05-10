@@ -1,4 +1,5 @@
 ﻿using ExcelToExcel.ViewModels;
+using Microsoft.Win32;
 using System.Windows;
 
 namespace ExcelToExcel
@@ -8,11 +9,22 @@ namespace ExcelToExcel
     /// </summary>
     public partial class MainWindow : Window
     {
+        MainViewModel mvm;
         public MainWindow()
         {
             InitializeComponent();
+            mvm = new MainViewModel();
+            DataContext = mvm;
+        }
 
-            DataContext = new MainViewModel();
+        private void BtnInputFile_Click(object sender, RoutedEventArgs e)
+        {
+            var ofd = new OpenFileDialog();
+
+            if (ofd.ShowDialog() == true)
+            {
+                mvm.InputFilename = ofd.FileName;
+            }
         }
     }
 }
