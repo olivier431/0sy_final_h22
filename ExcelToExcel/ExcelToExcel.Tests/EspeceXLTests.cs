@@ -65,6 +65,41 @@ namespace ExcelToExcel.Tests
             Assert.NotEqual(notExpected, actual);
         }
 
+        [Fact]        
+        public void LoadFile_ShouldFail_When_NoFile()
+        {
+            /// Arrange
+            /// 
+            var especeXL = new EspeceXL("");
+            
+            /// Act
+            /// 
+            Action act = () => especeXL.LoadFile();
+
+            /// Assert
+            /// 
+            Assert.Throws<ArgumentException>(act);
+        }
+
+        [Theory]
+        [InlineData("invalide_fichier_type.txt")]
+        public void LoadFile_ShouldFail_When_BadFile(string fn)
+        {
+            /// Arrange
+            /// 
+            var filename = Path.Combine(excelFilesPath, fn);
+            var especeXL = new EspeceXL(filename);
+
+            /// Act
+            /// 
+            Action act = () => especeXL.LoadFile();
+
+            /// Assert
+            /// 
+            Assert.Throws<ArgumentException>(act);
+        }
+
+
         public static IEnumerable<object[]> BadExcelFilesTestData = new List<object[]>
         {
             new object[] {"Contenu_nom de peuplement.xlsx"},

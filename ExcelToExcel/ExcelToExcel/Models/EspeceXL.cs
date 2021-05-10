@@ -54,7 +54,7 @@ namespace ExcelToExcel.Models
 
             string result = string.Empty;
 
-            var worksheet = wb.Worksheet("especes");
+            var worksheet = wb.Worksheet(sheetname);
             var lastCellAddress = worksheet.RangeUsed().LastCell().Address;
 
             var res = worksheet.Rows(1, lastCellAddress.RowNumber)
