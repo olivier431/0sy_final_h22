@@ -16,4 +16,12 @@ Le fichier **liste_especes.xlsx** est un fichier qui respecte tous les requis.
 L'application doit être en mesure de charger un fichier Excel.
 **Un fichier Excel pour être valide**
 - Le fichier doit exister. Sinon afficher un message à l'utilisateur indiquant que le fichier est inexistant.
-- Le fichier Excel __source__ ne doit pas être en cours d'utilisation par Excel. Si tel est le cas, l'application ouvrira le fichier en lecture seule.
+- Le fichier Excel __source__ ne doit pas être en cours d'utilisation par Excel. Si tel est le cas, l'application ouvrira le fichier en lecture seule et affichera un message à cet effet à l'utilisateur.
+
+
+## Ce qui doit être fait
+Vous devez faire les tests pour :
+- la méthode **ValidateExcel()**.
+- Le constructueur **EspeceXL()**
+- Les différentes méthodes de la classe **EspeceXL**
+
