@@ -1,5 +1,6 @@
 ﻿using ClosedXML.Excel;
 using System;
+using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 
@@ -13,6 +14,8 @@ namespace ExcelToExcel.Models
 
         public string Filename { get; set; }
         public bool IsReadOnly { get; private set; } = false;
+
+        public string CSVSeparator { get; set; } = ";";
 
 
         public EspeceXL(string filename)
@@ -45,6 +48,10 @@ namespace ExcelToExcel.Models
             return wb.Worksheet(sheet).Cell(row, column).Value;
         }
 
+        /// <summary>
+        /// Retourne le contenu en format CSV
+        /// </summary>
+        /// <returns>Format CSV</returns>
         public string GetCSV()
         {
             if (!validFileContent())
@@ -58,11 +65,11 @@ namespace ExcelToExcel.Models
             var lastCellAddress = worksheet.RangeUsed().LastCell().Address;
 
             var res = worksheet.Rows(1, lastCellAddress.RowNumber)
-                .Select(r => string.Join(",", r.Cells(1, lastCellAddress.ColumnNumber)
+                .Select(r => string.Join(CSVSeparator, r.Cells(1, lastCellAddress.ColumnNumber)
                         .Select(cell =>
                         {
                             var cellValue = cell.GetValue<string>();
-                            return cellValue.Contains(",") ? $"\"{cellValue}\"" : cellValue;
+                            return cellValue.Contains(CSVSeparator) ? $"\"{cellValue}\"" : cellValue;
                         })));
 
             foreach (var r in res)
@@ -73,6 +80,30 @@ namespace ExcelToExcel.Models
             return result;
         }
 
+        public List<Espece> GetAsList()
+        {
+            List<Espece> result = new List<Espece>();
+            int startRow = 2;
+
+            var worksheet = wb.Worksheet(sheetname);
+            var lastCellAddress = worksheet.RangeUsed().LastCell().Address;
+
+            result = worksheet.Rows(startRow, lastCellAddress.RowNumber)
+                .Select(r =>
+                    new Espece { 
+                        Nom = (string)(r.Cell(1).Value), 
+                        NomLatin = (string)(r.Cell(2).Value),
+                        Habitat = (string)(r.Cell(3).Value),
+                    }
+                ).ToList();
+
+            return result;
+        }
+
+        /// <summary>
+        /// Permet de valider le contenu du fichier "Espece"
+        /// </summary>
+        /// <returns></returns>
         private bool validFileContent()
         {
             
@@ -93,5 +124,21 @@ namespace ExcelToExcel.Models
             return valid;
         }
 
+        /// <summary>
+        /// Permet de sauvegarder le contenu dans un fichier CSV
+        /// </summary>
+        /// <param name="filename"></param>
+        public void SaveCSV(string filename)
+        {
+            /// TODO : Ajouter les validations
+            /// 
+
+            var csvContent = GetCSV();
+
+            using (var writer = new StreamWriter(filename))
+            {
+                writer.Write(csvContent);
+            }
+        }
     }
 }

@@ -26,5 +26,16 @@ namespace ExcelToExcel
                 mvm.InputFilename = ofd.FileName;
             }
         }
+
+        private void BtnOutputFile_Click(object sender, RoutedEventArgs e)
+        {
+            var sfd = new SaveFileDialog();
+            sfd.Filter = "CSV|*.csv|json|*.json|Fichier Excel|*.xlsx|Tous les fichiers|*.*";
+
+            if (sfd.ShowDialog() == true)
+            {
+                mvm.OutputFilename = sfd.FileName;
+            }
+        }
     }
 }
