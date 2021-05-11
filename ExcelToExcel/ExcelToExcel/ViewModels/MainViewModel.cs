@@ -23,7 +23,7 @@ namespace ExcelToExcel.ViewModels
                 /// Commentaire pédagogique
                 /// Sert à envoyer un signal au UI pour valider si
                 /// la commande peut être exécuté
-                ValidateExcelCommand.RaiseCanExecuteChanged();
+                SaveCommand.RaiseCanExecuteChanged();
                 LoadContentCommand.RaiseCanExecuteChanged();
             }
         }
@@ -64,9 +64,8 @@ namespace ExcelToExcel.ViewModels
         }
 
 
-        public DelegateCommand<string> ValidateExcelCommand { get; set; }
+        public DelegateCommand<string> SaveCommand { get; set; }
         public DelegateCommand<string> LoadContentCommand { get; set; }
-        public DelegateCommand<string> TestCommand { get; set; }
 
         public MainViewModel()
         {
@@ -75,9 +74,8 @@ namespace ExcelToExcel.ViewModels
 
         private void initCommands()
         {
-            ValidateExcelCommand = new DelegateCommand<string>(ValidateExcel, CanExecuteValidateExcelCommand);
+            SaveCommand = new DelegateCommand<string>(Save, CanExecuteSaveCommand);
             LoadContentCommand = new DelegateCommand<string>(LoadContent, CanExecuteLoadContentCommand);
-            TestCommand = new DelegateCommand<string>(TestAction);
         }
 
         private bool CanExecuteLoadContentCommand(string obj)
@@ -121,10 +119,6 @@ namespace ExcelToExcel.ViewModels
             }
         }
 
-        private void TestAction(string obj)
-        {
-            
-        }
 
         /// <summary>
         /// Commentaire pédagogique
@@ -136,13 +130,19 @@ namespace ExcelToExcel.ViewModels
         /// </summary>
         /// <param name="obj"></param>
         /// <returns></returns>
-        private bool CanExecuteValidateExcelCommand(string obj)
+        private bool CanExecuteSaveCommand(string obj)
         {
+            /// TODO : S'assurer que les tests de la commande fonctionne
+            /// 
+
             return !string.IsNullOrEmpty(InputFilename);
         }
 
-        private void ValidateExcel(string obj)
+        private void Save(string obj)
         {
+            /// TODO : S'assurer que les tests de la commande fonctionne
+            /// 
+
             throw new NotImplementedException();
         }
     }

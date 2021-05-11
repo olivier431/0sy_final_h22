@@ -53,9 +53,9 @@
                 <TextBox    Grid.Column="1" Grid.Row="1" Text="{Binding OutputFilename, UpdateSourceTrigger=PropertyChanged}"/>
                 <Button     Grid.Column="2" Grid.Row="1" Width="20" HorizontalAlignment="Left" Name="BtnOutputFile" Content="..." Click="BtnOutputFile_Click"/>
             </Grid>
-            <StackPanel Grid.Row="1">
-                <Button Width="150" Content="Valider" Command="{Binding ValidateExcelCommand}"/>
+            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Width="150" Content="Charger" Command="{Binding LoadContentCommand}"/>
+                <Button Width="150" Content="Sauvegarder" Command="{Binding ValidateExcelCommand}"/>
             </StackPanel>
             <StackPanel Grid.Row="2">
                 <TextBox Text="{Binding FileContent}" 
