@@ -1,4 +1,5 @@
 ﻿using ClosedXML.Excel;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -130,15 +131,58 @@ namespace ExcelToExcel.Models
         /// <param name="filename"></param>
         public void SaveCSV(string filename)
         {
-            /// TODO : Ajouter les validations
+            /// TODO : Ajouter les validations pour passer les tests
             /// 
 
-            var csvContent = GetCSV();
+            var output = GetCSV();
 
             using (var writer = new StreamWriter(filename))
             {
-                writer.Write(csvContent);
+                writer.Write(output);
             }
+        }
+
+        public void SaveJson(string filename)
+        {
+            /// TODO : Ajouter les validations pour passer les test
+            /// 
+            var lst = GetAsList();
+
+            string output = JsonConvert.SerializeObject(lst);
+
+            using (var writer = new StreamWriter(filename))
+            {
+                writer.Write(output);
+            }
+        }
+
+        public void SaveToFile(string filename, bool overwrite = false)
+        {
+            /// TODO : Ajouter les validations pour passer les tests
+            
+            var ext = Path.GetExtension(filename).ToLower();
+
+            switch (ext)
+            {
+                case ".csv":
+                    SaveCSV(filename);
+                    break;
+                case ".json":
+                    SaveJson(filename);
+                    break;
+                case ".xlsx":
+                    SaveXls(filename);
+                    break;
+                default:
+                    break;
+
+            }
+        }
+
+        private void SaveXls(string filename)
+        {
+            /// TODO : Ajouter les validations pour passer les tests
+            wb.SaveAs(filename);
         }
     }
 }
