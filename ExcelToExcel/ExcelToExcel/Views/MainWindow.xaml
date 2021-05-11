@@ -55,7 +55,7 @@
             </Grid>
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center">
                 <Button Width="150" Content="Charger" Command="{Binding LoadContentCommand}"/>
-                <Button Width="150" Content="Sauvegarder" Command="{Binding ValidateExcelCommand}"/>
+                <Button Width="150" Content="Sauvegarder" Command="{Binding SaveCommand}"/>
             </StackPanel>
             <StackPanel Grid.Row="2">
                 <TextBox Text="{Binding FileContent}" 

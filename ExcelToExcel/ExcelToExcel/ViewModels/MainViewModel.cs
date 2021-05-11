@@ -143,7 +143,7 @@ namespace ExcelToExcel.ViewModels
             /// TODO : S'assurer que les tests de la commande fonctionne
             /// 
 
-            throw new NotImplementedException();
+            especes.SaveToFile(OutputFilename);
         }
     }
 }

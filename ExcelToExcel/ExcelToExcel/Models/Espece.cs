@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace ExcelToExcel.Models
+﻿namespace ExcelToExcel.Models
 {
     public class Espece
     {

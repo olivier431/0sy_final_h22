@@ -136,7 +136,7 @@ namespace ExcelToExcel.Models
 
             var output = GetCSV();
 
-            using (var writer = new StreamWriter(filename))
+            using (var writer = new StreamWriter(filename, false, System.Text.Encoding.UTF8))
             {
                 writer.Write(output);
             }
@@ -148,7 +148,7 @@ namespace ExcelToExcel.Models
             /// 
             var lst = GetAsList();
 
-            string output = JsonConvert.SerializeObject(lst);
+            string output = JsonConvert.SerializeObject(lst, Formatting.Indented);
 
             using (var writer = new StreamWriter(filename))
             {
@@ -174,8 +174,9 @@ namespace ExcelToExcel.Models
                     SaveXls(filename);
                     break;
                 default:
+                    /// TODO : Lancer l'exception ArgumentException avec le message "Type inconnu" et le nom du paramètre filename
+                    /// 
                     break;
-
             }
         }
 

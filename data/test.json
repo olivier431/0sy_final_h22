@@ -1,0 +1,1352 @@
+[
+  {
+    "Nom": "Sapin baumier",
+    "NomLatin": "Abies balsamea",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Érable Négundo",
+    "NomLatin": "Acer negundo",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Érable de Pensylvanie",
+    "NomLatin": "Acer pensylvanicum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Érable rouge",
+    "NomLatin": "Acer rubrum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Érable argenté",
+    "NomLatin": "Acer saccharinum",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Érable à sucre",
+    "NomLatin": "Acer saccharum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Érable à épis",
+    "NomLatin": "Acer spicatum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Achillée millefeuille",
+    "NomLatin": "Achillea millefolium",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Actée à gros pédicelles",
+    "NomLatin": "Actaea pachypoda",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Actée rouge",
+    "NomLatin": "Actaea rubra",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Adiante pédalée",
+    "NomLatin": "Adiantum pedatum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Gérardie appauvrie",
+    "NomLatin": "Agalinis paupercula var. paupercula",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Ail des bois",
+    "NomLatin": "Allium tricoccum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Aulne rugueux",
+    "NomLatin": "Alnus incana ssp. rugosa",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Herbe-à-poux",
+    "NomLatin": "Ambrosia artemisiifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Amélanchier",
+    "NomLatin": "Amelachier sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Amélanchier de Bartram",
+    "NomLatin": "Amelanchier bartramiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Amphicarpe bractéolé",
+    "NomLatin": "Amphicarpa bracteolata",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Andromède glauque",
+    "NomLatin": "Andromeda glaucophylla",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Aralie hispide",
+    "NomLatin": "Aralia hispida",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Aralie à tige nue",
+    "NomLatin": "Aralia nudicaulis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Petit prêcheur",
+    "NomLatin": "Arisaema triphyllum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Asclépiade commune",
+    "NomLatin": "Asclepias syriaca",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Aster",
+    "NomLatin": "Aster sp.",
+    "Habitat": ""
+  },
+  {
+    "Nom": "Athyrie fougère-femelle",
+    "NomLatin": "Athyrium filix-femina",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Bouleau jaune",
+    "NomLatin": "Betula alleghaniensis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Bouleau blanc",
+    "NomLatin": "Betula papyrifera",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Bouleau gris",
+    "NomLatin": "Betula populifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Bouleau",
+    "NomLatin": "Betula sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Bident cerné",
+    "NomLatin": "Bidens cernua",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Bident conné",
+    "NomLatin": "Bidens connata",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Bident feuillé",
+    "NomLatin": "Bidens frondosa",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Bident",
+    "NomLatin": "Bidens sp.",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Bident en toupet",
+    "NomLatin": "Bidens tripartita",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Brome inerme",
+    "NomLatin": "Bromus inermis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Butome à ombelles",
+    "NomLatin": "Butomus umbellatus",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Calamagrostide du Canada",
+    "NomLatin": "Calamagrostis canadensis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Liseron des haies",
+    "NomLatin": "Calystegia sepium ssp. Sepium",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Carex blanchâtre",
+    "NomLatin": "Carex canescens",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Carex crépu",
+    "NomLatin": "Carex crinita",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Carex disperme",
+    "NomLatin": "Carex disperma",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Carex jaune",
+    "NomLatin": "Carex flava",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Carex intumescent",
+    "NomLatin": "Carex intumescens",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Carex brillant",
+    "NomLatin": "Carex lurida",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Carex paléacé",
+    "NomLatin": "Carex paleacea",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Carex",
+    "NomLatin": "Carex spp.",
+    "Habitat": ""
+  },
+  {
+    "Nom": "Carex stipité",
+    "NomLatin": "Carex stipata",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Carex trisperme",
+    "NomLatin": "Carex trisperma",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Galane glabre",
+    "NomLatin": "Chelone glabra",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Dorine d'Amérique",
+    "NomLatin": "Chrysosplenium americanum",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Cicutaire maculée",
+    "NomLatin": "Cicuta maculata",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Circée alpine",
+    "NomLatin": "Circaea alpina",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Chardon des champs",
+    "NomLatin": "Cirsium arvense",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Chardon vulgaire",
+    "NomLatin": "Cirsium vulgare",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Clématite de Virginie",
+    "NomLatin": "Clematis virginiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Coptide du Groendland",
+    "NomLatin": "Coptis trifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Cornouiller à feuilles alternes",
+    "NomLatin": "Cornus alternifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Cornouiller du Canada",
+    "NomLatin": "Cornus canadensis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Cornouiller stolonifère",
+    "NomLatin": "Cornus sericea ssp. sericea",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Noisetier à long bec ",
+    "NomLatin": "Corylus cornuta",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Aubépine",
+    "NomLatin": "Crataegus sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Cypripède acaule",
+    "NomLatin": "Cypripedium acaule",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Cypripède soulier",
+    "NomLatin": "Cypripedium Calceolus",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Dalibarde rampante",
+    "NomLatin": "Dalibarda repens",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Dennstaedtie à lobules ponctués",
+    "NomLatin": "Dennstaedtia punctilobula",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Aster à ombelles",
+    "NomLatin": "Doellingeria umbellata var. umbellata",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Dryoptère de Carthus",
+    "NomLatin": "Dryopteris carthusiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Dryoptère de Clinton",
+    "NomLatin": "Dryopteris clintoniana",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Dryoptère à crêtes",
+    "NomLatin": "Dryopteris cristata",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Dryoptère spinuleuse",
+    "NomLatin": "Dryopteris expansa",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Dryoptère intermédiaire",
+    "NomLatin": "Dryopteris intermedia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Dryoptère à sores marginales",
+    "NomLatin": "Dryopteris marginalis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Duliche roseau",
+    "NomLatin": "Dulichium arundinaceum",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Éleocharide aciculaire",
+    "NomLatin": "Eleocharis acicularis",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Éléocharide",
+    "NomLatin": "Eleocharis sp.",
+    "Habitat": ""
+  },
+  {
+    "Nom": "Agropyron rampant",
+    "NomLatin": "Elymus repens  ",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Épilobe à feuilles étroites",
+    "NomLatin": "Epilobium angustifolium",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Épilobe glanduleux",
+    "NomLatin": "Epilobium ciliatum ssp. glandulosum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Épilobe coloré",
+    "NomLatin": "Epilobium coloratum",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Épipactis petite-hellébore",
+    "NomLatin": "Epipactis helleborine",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Prêle des champs",
+    "NomLatin": "Equisetum arvense",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Prêle fluviatile",
+    "NomLatin": "Equisetum fluviatile",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Prêle d'hiver",
+    "NomLatin": "Equisetum hyemale",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Prêle palustre",
+    "NomLatin": "Equisetum palustre",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Prêle des prés",
+    "NomLatin": "Equisetum pratense",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Prêle faux-scirpe",
+    "NomLatin": "Equisetum scirpoides",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Prêle des bois",
+    "NomLatin": "Equisetum sylvaticum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Érythrone d'Amérique",
+    "NomLatin": "Erythronium americanum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Eupatoire perfoliée",
+    "NomLatin": "Eupatorium perfoliatum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Eupatoire rugueuse",
+    "NomLatin": "Eupatorium rugosum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Verge d'or à feuilles de graminées",
+    "NomLatin": "Euthamia graminifolia var. graminifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Eupatoire maculée",
+    "NomLatin": "Eutrochium maculatum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Hêtre à grandes feuilles",
+    "NomLatin": "Fagus grandifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Fraisier",
+    "NomLatin": "Fragaria sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Fraisier de Virginie",
+    "NomLatin": "Fragaria virginiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Frêne d'Amérique",
+    "NomLatin": "Fraxinus americana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Frêne noir",
+    "NomLatin": "Fraxinus nigra",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Frêne de Pennsylvanie",
+    "NomLatin": "Fraxinus pennsylvanica",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Galéopside à tige carrée",
+    "NomLatin": "Galeopsis tetrahit",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Gaillet gratteron",
+    "NomLatin": "Galium aparine",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Gaillet",
+    "NomLatin": "Galium sp.",
+    "Habitat": ""
+  },
+  {
+    "Nom": "Gaulthérie hispide",
+    "NomLatin": "Gaultheria hispidula",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Gaulthérie couchée",
+    "NomLatin": "Gaultheria procumbens",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Benoîte du Canada",
+    "NomLatin": "Geum canadense",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Benoîte à grandes feuilles",
+    "NomLatin": "Geum macrophyllum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Benoîte des ruisseaux",
+    "NomLatin": "Geum rivale",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Benoîte",
+    "NomLatin": "Geum sp.",
+    "Habitat": ""
+  },
+  {
+    "Nom": "Glycérie du Canada",
+    "NomLatin": "Glyceria canadensis",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Glycérie géante",
+    "NomLatin": "Glyceria grandis",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Glycérie mélicaire",
+    "NomLatin": "Glyceria melicaria",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Glycérie striée",
+    "NomLatin": "Glyceria striata ",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Gnaphale des vases",
+    "NomLatin": "Gnaphalium uliginosum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Fougère du hêtre",
+    "NomLatin": "Gymnocarpium dryopteris",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Épervière",
+    "NomLatin": "Hieracium sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Lycopode brillant",
+    "NomLatin": "Huperzia lucidula",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Millepertuis elliptique",
+    "NomLatin": "Hypericum ellipticum",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Millepertuis nain",
+    "NomLatin": "Hypericum mutilum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Millepertuis commun",
+    "NomLatin": "Hypericum perforatum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Houx verticillé",
+    "NomLatin": "Ilex verticilata",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Impatiente du cap",
+    "NomLatin": "Impatiens capensis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Aster à feuilles de linaire",
+    "NomLatin": "Ionactis linariifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Iris versicolor",
+    "NomLatin": "Iris versicolor",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Jonc épars",
+    "NomLatin": "Juncus effusus",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Kalmia à feuilles étroites",
+    "NomLatin": "Kalmia angustifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Laitue bisannuelle",
+    "NomLatin": "Lactuca biennis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Mélèze laricin",
+    "NomLatin": "Larix laricina",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Léerzie faux-riz",
+    "NomLatin": "Leersia oryzoides",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Leontodon d'automne",
+    "NomLatin": "Leontodon autumnalis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Lycopode innovant",
+    "NomLatin": "Lycopodium annotinum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Lycopode claviforme",
+    "NomLatin": "Lycopodium clavatum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Lycopode aplati",
+    "NomLatin": "Lycopodium complanatum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Lycopode en éventail",
+    "NomLatin": "Lycopodium flabelliforme",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Lycopode obscur",
+    "NomLatin": "Lycopodium obscurum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Lycope d’Amérique",
+    "NomLatin": "Lycopus americanus",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Lycope uniflore",
+    "NomLatin": "Lycopus uniflorus",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Lysimaque cilié",
+    "NomLatin": "Lysimachia ciliata",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Lysimaque terrestre",
+    "NomLatin": "Lysimachia terrestris",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Salicaire pourpre",
+    "NomLatin": "Lythrum salicaria",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Maïanthème du Canada",
+    "NomLatin": "Maianthemum canadensis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Maïanthème à grappe",
+    "NomLatin": "Maianthemum racemosum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Maïanthème étoilé",
+    "NomLatin": "Maianthemum stellatum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Pommier commun",
+    "NomLatin": "Malus pumila",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Matteucie fougère-à-l'autruche",
+    "NomLatin": "Matteuccia struthiopteris",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Médéole de Virginie",
+    "NomLatin": "Medeola virginiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Mitchella rampante",
+    "NomLatin": "Mitchella repens",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Myosotis laxiflore",
+    "NomLatin": "Myosotis laxa",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Myosotis scorpioïde",
+    "NomLatin": "Myosotis scorpioides",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Myrique baumier",
+    "NomLatin": "Myrica gale",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Némopanthe mucroné",
+    "NomLatin": "Nemopanthus mucronatus",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Onagre bisannuelle",
+    "NomLatin": "Oenothera biennis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Onagre",
+    "NomLatin": "Oenothera sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Onoclée sensible",
+    "NomLatin": "Onoclea sensibilis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Osmonde cannelle",
+    "NomLatin": "Osmunda cinnamomea",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Osmonde de Clayton",
+    "NomLatin": "Osmunda Claytoniana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Osmonde royale",
+    "NomLatin": "Osmunda regalis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Ostryer de Virginie",
+    "NomLatin": "Ostrya virginiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Oxalide des montagnes",
+    "NomLatin": "Oxalis montana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Oxalide dressée",
+    "NomLatin": "Oxalis stricta",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Vigne vierge",
+    "NomLatin": "Parthenocissus quinquefolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Phalaris roseau",
+    "NomLatin": "Phalaris arundinacea",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Fougère moustache",
+    "NomLatin": "Phegopteris connectilis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Phléole des prés",
+    "NomLatin": "Phleum pratense",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Aronie noire",
+    "NomLatin": "Photinia melanocarpa",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Phragmite commun",
+    "NomLatin": "Phragmites australis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Épinette blanche",
+    "NomLatin": "Picea glauca",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Épinette noire",
+    "NomLatin": "Picea mariana",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Épinette rouge",
+    "NomLatin": "Picea rubra",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Pin gris",
+    "NomLatin": "Pinus banksiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Pin rouge",
+    "NomLatin": "Pinus resinosa",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Pin blanc ",
+    "NomLatin": "Pinus strobus",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Plantain majeur",
+    "NomLatin": "Plantago major",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Habénaire à gorge frangée",
+    "NomLatin": "Platanthera blephariglottis var. blephariglottis",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Habénaire hyperboréale",
+    "NomLatin": "Platanthera hyperborea",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Graminées",
+    "NomLatin": "Poaceae spp.",
+    "Habitat": ""
+  },
+  {
+    "Nom": "Sceau de salomon",
+    "NomLatin": "Polygonatum pubescens",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Renouée sagittée",
+    "NomLatin": "Polygonum sagittatum",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Polystic faux-acrostic",
+    "NomLatin": "Polystichum acrostichoides",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Peuplier baumier",
+    "NomLatin": "Populus balsamifera",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Peuplier deltoïde",
+    "NomLatin": "Populus deltoides",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Peuplier à grandes dents",
+    "NomLatin": "Populus grandidentata",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Peuplier faux-tremble",
+    "NomLatin": "Populus tremuloides",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Potentille palustre",
+    "NomLatin": "Potentilla palustris",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Potentille dressée",
+    "NomLatin": "Potentilla recta",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Potentille simple",
+    "NomLatin": "Potentilla simplex",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Proserpinie des marais",
+    "NomLatin": "Proserpinaca palustris",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Cerisier de Pensylvanie",
+    "NomLatin": "Prunus pensylvanica",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Cerisier tardif",
+    "NomLatin": "Prunus serotina",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Cerisier de Virginie",
+    "NomLatin": "Prunus virginiana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Pyrole elliptique",
+    "NomLatin": "Pyrola elliptica",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Chêne rouge",
+    "NomLatin": "Quercus rubra",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Renoncule acre",
+    "NomLatin": "Ranunculus acris",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Herbe à puce",
+    "NomLatin": "Rhus radicans",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Vinaigrier",
+    "NomLatin": "Rhus typhina",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Rorippa amphibie",
+    "NomLatin": "Rorippa amphibia",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Mûrier",
+    "NomLatin": "Rubus alleghaniensis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Ronce hispide",
+    "NomLatin": "Rubus hispidus",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Framboisier",
+    "NomLatin": "Rubus idaeus",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Ronce pubescente",
+    "NomLatin": "Rubus pubescens",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Rumex petit-oseille",
+    "NomLatin": "Rumex Acetosella",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Rumex à feuilles obtuses",
+    "NomLatin": "Rumex obtusifolius",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Sagiyttaire latifoliée",
+    "NomLatin": "Sagittaria latifolia",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Saule",
+    "NomLatin": "Salix sp.",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Sureau blanc",
+    "NomLatin": "Sambucus canadensis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Sureau rouge",
+    "NomLatin": "Sambucus racemosa var. racemosa",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Scirpe d'Amérique",
+    "NomLatin": "Schoenoplectus pungens",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Scirpe à ceinture noire",
+    "NomLatin": "Scirpus atrocinctus ",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Scirpe noirâtre",
+    "NomLatin": "Scirpus atrovirens",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Scirpe à nœuds rouges",
+    "NomLatin": "Scirpus microcarpus",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Scutellaire à fleurs latérales",
+    "NomLatin": "Scutellaria lateriflora",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Orpin âcre",
+    "NomLatin": "Sedum acre",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Silène cucubale",
+    "NomLatin": "Silene vulgaris",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Berle douce",
+    "NomLatin": "Sium suave",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Morelle douce-amer",
+    "NomLatin": "Solanum dulcamara",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Verge d'or très haute",
+    "NomLatin": "Solidago altissima",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Verge d'or du Canada",
+    "NomLatin": "Solidago canadensis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Verge d'or à tige zigzaguante",
+    "NomLatin": "Solidago flexicaulis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Verge d’or géante",
+    "NomLatin": "Solidago gigantea",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Verge d’or rugueuse",
+    "NomLatin": "Solidago rugosa",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Verges d'or",
+    "NomLatin": "Solidago spp.",
+    "Habitat": ""
+  },
+  {
+    "Nom": "Sorbaria à feuilles de sorbier",
+    "NomLatin": "Sorbaria sorbifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Sorbier d'Amérique",
+    "NomLatin": "Sorbus americana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Sorbier des oiseaux",
+    "NomLatin": "Sorbus aucuparia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Sorbier",
+    "NomLatin": "Sorbus sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Rubanier à gros fruits",
+    "NomLatin": "Sparganium eurycarpum",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Rubanier",
+    "NomLatin": "Sparganium sp.",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Sphaigne",
+    "NomLatin": "Sphagnum sp.",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Spirée blanche",
+    "NomLatin": "Spiraea alba var. latifolia",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Spirée tomenteuse",
+    "NomLatin": "Spiraea tomentosa",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Spiranthe penchée",
+    "NomLatin": "Spiranthes cernua",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Stellaire graminée",
+    "NomLatin": "Stellaria graminea",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Stellaire à gongues feuilles",
+    "NomLatin": "Stellaria longifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Aster de la Nouvelle-Angleterre",
+    "NomLatin": "Symphyotrichum novae-angliae",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Symplocarpe choux-puant",
+    "NomLatin": "Symplocarpus foetidus",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Pissenlit",
+    "NomLatin": "Taraxacum sp.",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "If du Canada",
+    "NomLatin": "Taxus canadensis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Pigamon pubescent",
+    "NomLatin": "Thalictrum pubescens",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Thélyptère des marais",
+    "NomLatin": "Thelypteris palustris",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Thuya occidental",
+    "NomLatin": "Thuja occidentalis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Tilleul d'Amérique",
+    "NomLatin": "Tilia americana",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Millepertuis de Virginie",
+    "NomLatin": "Triadenum fraseri",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Trientale boréale",
+    "NomLatin": "Trientalis borealis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Trèfle hybride",
+    "NomLatin": "Trifolium hybridum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Trèfle des prés",
+    "NomLatin": "Trifolium pratense",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Trille rouge",
+    "NomLatin": "Trillium erectum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Trille blanche",
+    "NomLatin": "Trillium grandiflorum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Trille ondulée",
+    "NomLatin": "Trillium undulatum",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Pruche du Canada",
+    "NomLatin": "Tsuga canadensis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Quenouille",
+    "NomLatin": "Typha angustifolia",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Quenouille",
+    "NomLatin": "Typha latifolia",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Quenouille",
+    "NomLatin": "Typha sp.",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Orme d’Amérique",
+    "NomLatin": "Ulmus americana",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Ortie dioîque",
+    "NomLatin": "Urtica dioica subsp. gracilis",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Uvulaire à grandes fleurs",
+    "NomLatin": "Uvularia grandiflora",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Uvulaire petites fleurs",
+    "NomLatin": "Uvularia sessilifolia",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Bleuet à feuilles étroites",
+    "NomLatin": "Vaccinium angustifolium",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Bleuet en corymbe",
+    "NomLatin": "Vaccinium corymbosum",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Canneberge à gros fruits",
+    "NomLatin": "Vaccinium macrocarpon",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Bleuet fausse-myrtille",
+    "NomLatin": "Vaccinium myrtilloides",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Canneberge commune",
+    "NomLatin": "Vaccinium oxycoccos",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Valériane officinale",
+    "NomLatin": "Valeriana officinalis",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Verveine hastée",
+    "NomLatin": "Verbena hastata",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Viorne comestible",
+    "NomLatin": "Viburnum edule",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Viorne à feuilles d'aulne",
+    "NomLatin": "Viburnum lantanoides",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Viorne cassinoïde",
+    "NomLatin": "Viburnum nudum var. cassinoides",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Viorne trilobé",
+    "NomLatin": "Viburnum opulus",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Vesce jargeau",
+    "NomLatin": "Vicia cracca",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Violette pâle",
+    "NomLatin": "Viola mackloskeyi",
+    "Habitat": "Obligée"
+  },
+  {
+    "Nom": "Violette de Selkirk",
+    "NomLatin": "Viola Selkirkii",
+    "Habitat": "Terrestre"
+  },
+  {
+    "Nom": "Violette parente",
+    "NomLatin": "Viola sororia",
+    "Habitat": "Facultative"
+  },
+  {
+    "Nom": "Violette",
+    "NomLatin": "Viola sp.",
+    "Habitat": ""
+  }
+]
