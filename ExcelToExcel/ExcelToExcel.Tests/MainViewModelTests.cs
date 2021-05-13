@@ -33,6 +33,27 @@ namespace ExcelToExcel.Tests
             vm.InputFilename = "";
         }
 
+        #region Tests à compléter
+
+        public void InputFile_IsEmpty_Message_ShouldBe_Empty()
+        {
+            /// TODO : Q1a. Compléter le test
+            /// TODO : Q1b. Ne pas briser la batterie de tests après ce tests
+            /// 
+            Assert.True(false);
+        }
+
+        // TODO : Q2 : Compléter le test CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False
+
+        // TODO : Q3 : Compléter le test CanExecuteSaveCommand_OutputFileInvalid_ShouldReturn_False
+
+        // TODO : Q4 : Compléter le test CanExecuteSaveCommand_OutputFileValid_ShouldReturn_True(string filename)
+
+
+        #endregion
+
+        #region Tests corrigés
+
         [Theory]
         [MemberData(nameof(ExistingFilesTestData))]
         public void LoadContentCommand_CanExecute_FileExists_ShouldReturn_true(string fn)
@@ -146,6 +167,8 @@ namespace ExcelToExcel.Tests
             /// Assert
             Assert.NotEqual("", actual);
         }
+
+        #endregion
 
 
         #region TEST DATA
