@@ -131,7 +131,7 @@ namespace ExcelToExcel.Models
         /// <param name="filename"></param>
         public void SaveCSV(string filename)
         {
-            /// TODO : Q6 Ajouter les validations pour passer les tests
+            /// TODO : Q06 Ajouter les validations pour passer les tests
             /// 
 
             var output = GetCSV();
@@ -144,7 +144,7 @@ namespace ExcelToExcel.Models
 
         public void SaveJson(string filename)
         {
-            /// TODO : Q7 Ajouter les validations pour passer les test
+            /// TODO : Q07 Ajouter les validations pour passer les test
             /// 
             var lst = GetAsList();
 
@@ -158,7 +158,7 @@ namespace ExcelToExcel.Models
 
         public void SaveToFile(string filename, bool overwrite = false)
         {
-            /// TODO : Q9 Ajouter les validations pour passer les tests
+            /// TODO : Q09 Ajouter les validations pour passer les tests
             
             var ext = Path.GetExtension(filename).ToLower();
 
@@ -182,7 +182,7 @@ namespace ExcelToExcel.Models
 
         private void SaveXls(string filename)
         {
-            /// TODO : Q8 Ajouter les validations pour passer les tests
+            /// TODO : Q08 Ajouter les validations pour passer les tests
             wb.SaveAs(filename);
         }
     }

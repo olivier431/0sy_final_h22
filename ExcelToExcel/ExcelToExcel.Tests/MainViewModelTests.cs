@@ -35,19 +35,22 @@ namespace ExcelToExcel.Tests
 
         #region Tests à compléter
 
+        /// <summary>
+        /// Le fichier d'entrée est vide. La propriété Message devrait être vide.
+        /// </summary>
         public void InputFile_IsEmpty_Message_ShouldBe_Empty()
         {
-            /// TODO : Q1a. Compléter le test
-            /// TODO : Q1b. Ne pas briser la batterie de tests après ce tests
+            /// TODO : Q01a. Compléter le test
+            /// TODO : Q01b. Ne pas briser la batterie de tests après ce tests
             /// 
             Assert.True(false);
         }
 
-        // TODO : Q2 : Compléter le test CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False
+        // TODO : Q02 : Compléter le test CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False
 
-        // TODO : Q3 : Compléter le test CanExecuteSaveCommand_OutputFileInvalid_ShouldReturn_False
+        // TODO : Q03 : Compléter le test CanExecuteSaveCommand_OutputFileInvalid_ShouldReturn_False
 
-        // TODO : Q4 : Compléter le test CanExecuteSaveCommand_OutputFileValid_ShouldReturn_True(string filename)
+        // TODO : Q04 : Compléter le test CanExecuteSaveCommand_OutputFileValid_ShouldReturn_True(string filename)
 
 
         #endregion
