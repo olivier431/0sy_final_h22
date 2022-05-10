@@ -131,7 +131,7 @@ namespace ExcelToExcel.Models
         /// <param name="filename"></param>
         public void SaveCSV(string filename)
         {
-            /// TODO : Q06 Ajouter les validations pour passer les tests
+            /// TODO : Q05 : Ajouter les validations pour passer les tests
             /// 
 
             var output = GetCSV();
@@ -144,7 +144,7 @@ namespace ExcelToExcel.Models
 
         public void SaveJson(string filename)
         {
-            /// TODO : Q07 Ajouter les validations pour passer les test
+            /// TODO : Q06 Ajouter les validations pour passer les tests
             /// 
             var lst = GetAsList();
 
@@ -158,7 +158,7 @@ namespace ExcelToExcel.Models
 
         public void SaveToFile(string filename, bool overwrite = false)
         {
-            /// TODO : Q09 Ajouter les validations pour passer les tests
+            /// TODO : Q08 Ajouter les validations pour passer les tests
             
             var ext = Path.GetExtension(filename).ToLower();
 
@@ -174,7 +174,7 @@ namespace ExcelToExcel.Models
                     SaveXls(filename);
                     break;
                 default:
-                    /// TODO : Q10 Lancer l'exception ArgumentException avec le message "Type inconnu" et le nom du paramètre filename
+                    /// TODO : Q09 Lancer l'exception ArgumentException avec le message "Type inconnu" et le nom du paramètre filename
                     /// 
                     break;
             }
@@ -182,7 +182,7 @@ namespace ExcelToExcel.Models
 
         private void SaveXls(string filename)
         {
-            /// TODO : Q08 Ajouter les validations pour passer les tests
+            /// TODO : Q07 Ajouter les validations pour passer les tests
             wb.SaveAs(filename);
         }
     }

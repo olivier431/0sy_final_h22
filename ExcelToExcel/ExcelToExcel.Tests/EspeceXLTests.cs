@@ -99,6 +99,11 @@ namespace ExcelToExcel.Tests
             Assert.Throws<ArgumentException>(act);
         }
 
+        // TODO : Q05 : Créez le test « SaveCSV_BadFileName_Should_Fail »
+
+        // TODO : Q06 : Créez le test « SaveJson_BadFileName_Should_Fail »
+
+        // TODO : Q07 : Créez le test « SaveXls_BadFileName_Should_Fail »
 
         public static IEnumerable<object[]> BadExcelFilesTestData = new List<object[]>
         {

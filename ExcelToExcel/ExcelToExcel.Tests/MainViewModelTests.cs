@@ -46,11 +46,11 @@ namespace ExcelToExcel.Tests
             Assert.True(false);
         }
 
-        // TODO : Q02 : Compléter le test CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False
+        // TODO : Q02 : Créer le test CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False
 
-        // TODO : Q03 : Compléter le test CanExecuteSaveCommand_OutputFileInvalid_ShouldReturn_False
+        // TODO : Q03 : Créer le test CanExecuteSaveCommand_OutputFileInvalid_ShouldReturn_False
 
-        // TODO : Q04 : Compléter le test CanExecuteSaveCommand_OutputFileValid_ShouldReturn_True(string filename)
+        // TODO : Q04 : Créer le test CanExecuteSaveCommand_OutputFileValid_ShouldReturn_True(string filename)
 
 
         #endregion
