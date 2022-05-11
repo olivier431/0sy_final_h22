@@ -141,6 +141,42 @@ namespace ExcelToExcel.Tests
 
         // TODO : Q07 : Créez le test « SaveXls_BadFileName_Should_Fail »
 
+        [Theory]
+        [MemberData(nameof(BadExcelFilesTestData))]
+        public void SaveXls_BadFileName_Should_fail(string fn)
+        {
+            /// Arrange
+            /// 
+            var filename = Path.Combine(excelFilesPath, fn);
+            var especeXL = new EspeceXL(filename);
+
+            /// Act
+            Action act = () => especeXL.SaveXls(filename);
+
+
+            /// Assert
+            /// 
+            Assert.Throws<ArgumentException>(act);
+        }
+
+        [Theory]
+        [MemberData(nameof(BadExcelFilesTestData))]
+        public void SaveToFile_BadFileName_Should_Fail(string fn)
+        {
+            /// Arrange
+            /// 
+            var filename = Path.Combine(excelFilesPath, fn);
+            var especeXL = new EspeceXL(filename);
+
+            /// Act
+            Action act = () => especeXL.SaveToFile(filename);
+
+
+            /// Assert
+            /// 
+            Assert.Throws<ArgumentException>(act);
+        }
+
         public static IEnumerable<object[]> BadExcelFilesTestData = new List<object[]>
         {
             new object[] {"Contenu_nom de peuplement.xlsx"},

@@ -199,10 +199,21 @@ namespace ExcelToExcel.Models
             }
         }
 
-        private void SaveXls(string filename)
+        public void SaveXls(string filename)
         {
             /// TODO : Q07 Ajouter les validations pour passer les tests
-            wb.SaveAs(filename);
+            /// 
+            try
+            {
+               
+                wb.SaveAs(filename);
+            }
+            catch (ArgumentException e)
+            {
+
+                Console.WriteLine("Mauvais nom de fichier");
+            }
+
         }
     }
 }
