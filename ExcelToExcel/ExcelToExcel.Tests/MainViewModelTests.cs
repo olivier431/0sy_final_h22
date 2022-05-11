@@ -39,21 +39,30 @@ namespace ExcelToExcel.Tests
         /// Le fichier d'entrée est vide. La propriété Message devrait être vide.
         /// </summary>
         /// 
-        [Theory]
-        [MemberData(nameof(ExistingFilesTestData))]
-        public void InputFile_IsEmpty_Message_ShouldBe_Empty(string fn)
+        [Fact]
+        public void InputFile_IsEmpty_Message_ShouldBe_Empty()
         {
             /// TODO : Q01a. Compléter le test
-            var filename = Path.Combine(excelFilesPath, fn);
+            var filename = "";
             vm.InputFilename = filename;
 
+            var expected = "";
+
+            /// Act
+            vm.LoadContentCommand.CanExecute("");
+            var actual = vm.Message;
+
+            /// Assert
+            Assert.Equal(expected, actual);
 
             /// TODO : Q01b. Ne pas briser la batterie de tests après ce tests
             /// 
-            Assert.True(false);
+            
         }
 
         // TODO : Q02 : Créer le test CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False
+
+
 
         // TODO : Q03 : Créer le test CanExecuteSaveCommand_OutputFileInvalid_ShouldReturn_False
 

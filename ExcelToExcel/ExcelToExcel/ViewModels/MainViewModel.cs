@@ -87,7 +87,7 @@ namespace ExcelToExcel.ViewModels
 
             var fileExists = File.Exists(InputFilename);
 
-            if (!fileExists)
+            if (!fileExists && inputFilename == null)
             {
                 Message = "Fichier inexistant!";
                 result = false;
