@@ -133,13 +133,22 @@ namespace ExcelToExcel.Models
         {
             /// TODO : Q05 : Ajouter les validations pour passer les tests
             /// 
-
-            var output = GetCSV();
-
-            using (var writer = new StreamWriter(filename, false, System.Text.Encoding.UTF8))
+            try
             {
-                writer.Write(output);
+                var output = GetCSV();
+
+                using (var writer = new StreamWriter(filename, false, System.Text.Encoding.UTF8))
+                {
+                    writer.Write(output);
+                }
             }
+            catch (ArgumentException e )
+            {
+
+                Console.WriteLine("Mauvais nom de fichier"); 
+            }
+
+           
         }
 
         public void SaveJson(string filename)

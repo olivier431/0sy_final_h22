@@ -143,7 +143,7 @@ namespace ExcelToExcel.ViewModels
 
             
 
-            if ()
+            if (true)
             {
                 result = false;
             }
