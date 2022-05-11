@@ -87,19 +87,20 @@ namespace ExcelToExcel.ViewModels
 
             var fileExists = File.Exists(InputFilename);
 
-            if (!fileExists && inputFilename == null)
-            {
-                Message = "Fichier inexistant!";
-                result = false;
-            }
-            else
+            if (fileExists || inputFilename == null)
             {
                 Message = "";
                 result = true;
             }
+            else
+            {
+                Message = "Fichier inexistant!";
+                result = false;
+            }
 
             return result;
         }
+
 
         private void LoadContent(string obj = null)
         {
@@ -134,8 +135,10 @@ namespace ExcelToExcel.ViewModels
         {
             /// TODO : S'assurer que les tests de la commande fonctionne
             /// 
+            return !string.IsNullOrEmpty(inputFilename);
 
-            return !string.IsNullOrEmpty(InputFilename);
+
+
         }
 
         private void Save(string obj)
