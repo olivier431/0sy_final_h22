@@ -87,7 +87,7 @@ namespace ExcelToExcel.ViewModels
 
             var fileExists = File.Exists(InputFilename);
 
-            if (fileExists || inputFilename == null)
+            if (fileExists || InputFilename == "")
             {
                 Message = "";
                 result = true;
@@ -135,7 +135,25 @@ namespace ExcelToExcel.ViewModels
         {
             /// TODO : S'assurer que les tests de la commande fonctionne
             /// 
-            return !string.IsNullOrEmpty(inputFilename);
+
+            bool result;
+
+            if (!string.IsNullOrEmpty(obj))
+                InputFilename = obj;
+
+            
+
+            if ()
+            {
+                result = false;
+            }
+
+            else
+            {
+                result = true;
+            }
+
+            return result;
 
 
 

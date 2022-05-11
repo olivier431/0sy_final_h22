@@ -61,25 +61,53 @@ namespace ExcelToExcel.Tests
         }
 
         // TODO : Q02 : Créer le test CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False
-        //[Fact]
-        //public void CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False()
-        //{
-        //    var filename = "liste_especes.xlsx";
-        //    vm.InputFilename = filename;
+        [Fact]
+        public void CanExecuteSaveCommand_FileNotLoaded_ShouldReturn_False()
+        {
+            var filename = "liste_especes.xlsx";
+            vm.InputFilename = filename;
 
-            
-        //    var actual = vm.SaveCommand.CanExecute("");
 
-        //    Assert.False(actual);
+            var actual = vm.SaveCommand.CanExecute("");
 
-           
-        //}
+            Assert.False(actual);
+
+
+        }
 
 
         // TODO : Q03 : Créer le test CanExecuteSaveCommand_OutputFileInvalid_ShouldReturn_False
+        [Theory]
+        [MemberData(nameof(BadExcelFilesTestData))]
+        public void CanExecuteSaveCommand_OutoutFileInvalide_ShouldReturn_False(string fn)
+        {
+            var filename = Path.Combine(excelFilesPath, fn);
+            vm.OutputFilename = filename;
+
+
+            var actual = vm.SaveCommand.CanExecute("");
+
+            Assert.False(actual);
+
+
+        }
+
 
         // TODO : Q04 : Créer le test CanExecuteSaveCommand_OutputFileValid_ShouldReturn_True(string filename)
+        [Theory]
+        [MemberData(nameof(GoodExcelFileTestData))]
+        public void CanExecuteSaveCommand_OutputFileValid_ShouldReturn_true(string fn)
+        {
+            var filename = Path.Combine(excelFilesPath, fn);
+            vm.OutputFilename = filename;
 
+
+            var actual = vm.SaveCommand.CanExecute("");
+
+            Assert.True(actual);
+
+
+        }
 
         #endregion
 
