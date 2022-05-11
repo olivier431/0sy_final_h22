@@ -178,7 +178,7 @@ namespace ExcelToExcel.Models
         public void SaveToFile(string filename, bool overwrite = false)
         {
             /// TODO : Q08 Ajouter les validations pour passer les tests
-            
+
             var ext = Path.GetExtension(filename).ToLower();
 
             switch (ext)
@@ -195,6 +195,7 @@ namespace ExcelToExcel.Models
                 default:
                     /// TODO : Q09 Lancer l'exception ArgumentException avec le message "Type inconnu" et le nom du paramètre filename
                     /// 
+                    /// throw new BadExtentionException($"L'extentions du fichier {filename} n<est pas bonne !");
                     break;
             }
         }
@@ -205,7 +206,7 @@ namespace ExcelToExcel.Models
             /// 
             try
             {
-               
+
                 wb.SaveAs(filename);
             }
             catch (ArgumentException e)

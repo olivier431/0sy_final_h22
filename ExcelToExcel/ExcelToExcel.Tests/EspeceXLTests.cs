@@ -177,6 +177,25 @@ namespace ExcelToExcel.Tests
             Assert.Throws<ArgumentException>(act);
         }
 
+        [Theory]
+        [InlineData(".txt")]
+        [InlineData(".exe")]
+        public void SaveToFile_BadExtension_Should_Fai(string ext)
+        {
+            /// Arrange
+            /// 
+            var extention = Path.Combine(excelFilesPath, ext);
+            var especeXL = new EspeceXL(extention);
+
+            /// Act
+            Action act = () => especeXL.SaveToFile(extention);
+
+
+            /// Assert
+            /// 
+            Assert.Throws<ArgumentException>(act);
+        }
+
         public static IEnumerable<object[]> BadExcelFilesTestData = new List<object[]>
         {
             new object[] {"Contenu_nom de peuplement.xlsx"},
